@@ -9,15 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.1.1",
+    "bcryptjs": "^3.0.2",
+    "lucide-react": "^0.519.0",
+    "next": "15.3.2",
+    "next-auth": "^4.24.11",
+    "razorpay": "^2.9.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.2"
+    "react-hook-form": "^7.58.1",
+    "react-hot-toast": "^2.5.2",
+    "react-toastify": "^11.0.5",
+    "yup": "^1.6.1",
+    "zod": "^3.25.67"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4"
   }
 }
