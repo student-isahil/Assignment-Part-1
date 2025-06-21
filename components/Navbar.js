@@ -6,7 +6,7 @@ import Link from "next/link"
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(null)
 
-  const navItems = ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"]
+  const navItems = ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum","Sign in"]
 
   return (
     <header className="fixed top-0 w-full z-50 bg-white shadow">
@@ -26,9 +26,7 @@ export default function Navbar() {
             </Link>
           ))}
         </nav>
-        <div className="text-2xl font-bold text-blue-800">
-          <Link href="#">Sign in</Link>
-        </div>
+       
 
 
         {/* Mobile Nav Toggle */}
@@ -48,6 +46,7 @@ export default function Navbar() {
           <nav className="flex flex-col space-y-2">
             {navItems.map((item, index) => (
               <Link
+                onClick={() => setOpenMenu(!openMenu)}
                 key={index}
                 href="#"
                 className="text-gray-700 hover:text-blue-800 transition"
